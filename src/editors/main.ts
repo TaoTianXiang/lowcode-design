@@ -24,7 +24,6 @@ import './assets/main.scss';
     ],
   });
   await plugins.register(Inject);
-  // await plugins.register(RegistryPlugin);
   await plugins.register(UndoRedoPlugin);
   await plugins.register(SchemaPlugin);
   await plugins.register(DataSource); //数据源

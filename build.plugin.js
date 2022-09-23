@@ -15,11 +15,9 @@ module.exports = ({ onGetWebpackConfig }) => {
       node: {
         fs: 'empty',
       },
-      // entry: require.resolve('./src/editors/main.ts'),
       entry: {
         editor: require.resolve('./src/editors/main.ts'),
         simulator: require.resolve('./src/editors/simulator.ts'),
-        // simulator: require.resolve('./src/vue/simulator.ts'),
       },
     });
     config.plugin('copyStatic').use(CopyWebpackPlugin, [
@@ -43,14 +41,15 @@ module.exports = ({ onGetWebpackConfig }) => {
         filename: 'index.html',
       },
     ]);
-    config.plugin('vue-preview').use(HtmlWebpackPlugin, [
+    config.plugin('preview').use(HtmlWebpackPlugin, [
       {
         inject: false,
+        minify: false,
         templateParameters: {
-          render: 'vue-preview',
+          render: 'preview',
         },
         template: require.resolve('./public/preview.ejs'),
-        filename: 'vue-preview.html',
+        filename: 'preview.html',
       },
     ]);
     config.plugins.delete('hot');

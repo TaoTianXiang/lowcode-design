@@ -22,5 +22,4 @@ const editorInit = (ctx: ILowCodePluginContext) => {
 };
 
 editorInit.pluginName = 'editorInit';
-
 export default editorInit;
