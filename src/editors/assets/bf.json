@@ -1,0 +1,108 @@
+{
+  "packages": [
+    {
+      "package": "vant-ui",
+      "version": "3.6.2",
+      "urls": ["https://fastly.jsdelivr.net/npm/vant@3/lib/vant.min.js"],
+      "library": "naive"
+    }
+  ],
+  "components": [
+    {
+      "title": "按钮",
+      "category": "基础组件",
+      "componentName": "vanButton",
+      "npm": {
+        "package": "vant-ui",
+        "version": "3.6.2",
+        "exportName": "vanButton",
+        "destructuring": true
+      },
+      "props": [
+        {
+          "name": "type",
+          "propType": "string"
+        },
+        {
+          "name": "plain",
+          "propType": "string"
+        },
+        {
+          "name": "text",
+          "propType": "string"
+        },
+        {
+          "name": "color",
+          "propType": "string"
+        },
+        {
+          "name": "to",
+          "propType": {
+            "type": "oneOfType",
+            "value": ["string", "object"]
+          }
+        }
+      ],
+      "configure": {
+        "props": [
+          {
+            "name": "type",
+            "title": "按钮类型",
+            "setter": {
+              "componentName": "RadioGroupSetter",
+              "props": {
+                "options": ["primary", "success", "warning", "danger"]
+              }
+            }
+          },
+          {
+            "name": "plain",
+            "title": "是否为朴素按钮",
+            "setter": "BoolSetter"
+          },
+          {
+            "name": "text",
+            "title": "按钮文字",
+            "setter": "StringSetter"
+          },
+          {
+            "name": "color",
+            "title": "按钮颜色",
+            "setter": "StringSetter"
+          },
+          {
+            "name": "to",
+            "title": "目标路由",
+            "setter": {
+              "componentName": "MixedSetter",
+              "props": {
+                "setters": [
+                  {
+                    "componentName": "RadioGroupSetter",
+                    "props": {
+                      "options": [
+                        { "label": "small", "value": "small" },
+                        { "label": "medium", "value": "medium" },
+                        { "label": "large", "value": "large" }
+                      ],
+                      "defaultValue": "medium"
+                    }
+                  },
+                  "StringSetter"
+                ]
+              }
+            }
+          }
+        ],
+        "supports": {
+          "style": true,
+          "events": ["onClick", "touchstart"]
+        }
+      }
+    }
+  ],
+  "sort": {
+    "categoryList": ["基础组件", "布局容器类"]
+  },
+  "ignoreComponents": {}
+}
