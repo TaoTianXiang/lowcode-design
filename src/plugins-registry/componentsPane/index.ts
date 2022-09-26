@@ -1,7 +1,7 @@
 import { ILowCodePluginContext } from '@alilc/lowcode-engine';
 import ComponentsPane from '@alilc/lowcode-plugin-components-pane';
 
-const leftArea = (ctx: ILowCodePluginContext) => {
+const componentsPane = (ctx: ILowCodePluginContext) => {
   return {
     name: 'builtin-plugin-registry',
     async init() {
@@ -25,6 +25,6 @@ const leftArea = (ctx: ILowCodePluginContext) => {
     },
   };
 };
-leftArea.pluginName = 'leftAreaPluginRegistry';
+componentsPane.pluginName = 'componentsPanePluginRegistry';
 
-export default leftArea;
+export default componentsPane;

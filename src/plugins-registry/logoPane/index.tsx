@@ -1,7 +1,7 @@
 import { ILowCodePluginContext } from '@alilc/lowcode-engine';
 import Logo from '@/componets/logo/logo';
 
-const topArea = (ctx: ILowCodePluginContext) => {
+const logoPane = (ctx: ILowCodePluginContext) => {
   return {
     name: 'builtin-plugin-registry',
     async init() {
@@ -23,6 +23,6 @@ const topArea = (ctx: ILowCodePluginContext) => {
     },
   };
 };
-topArea.pluginName = 'topAreaPluginRegistry';
+logoPane.pluginName = 'logoPanePluginRegistry';
 
-export default topArea;
+export default logoPane;
