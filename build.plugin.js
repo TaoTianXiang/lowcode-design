@@ -19,6 +19,9 @@ module.exports = ({ onGetWebpackConfig }) => {
         editor: require.resolve('./src/editors/main.ts'),
         simulator: require.resolve('./src/editors/simulator.ts'),
       },
+      // output: {
+      //   path: join(__dirname, '/build/test'),
+      // },
     });
     config.plugin('copyStatic').use(CopyWebpackPlugin, [
       [

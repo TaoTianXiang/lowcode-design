@@ -4,9 +4,10 @@
   },
   "vendor": false,
   "devServer": {
-    "hot": false
+    "hot": false,
+    "publicPath": "/test/"
   },
-  "publicPath": "/test",
+  "publicPath": "/",
   "externals": {
     "react": "var window.React",
     "react-dom": "var window.ReactDOM",

@@ -10,7 +10,7 @@ import logoPane from '@/plugins-registry/logoPane/index';
 import ComponentPane from '@/plugins-registry/componentsPane';
 import pluginMap from '@/plugins-registry/pluginMap';
 import saveAndPreview from '@/plugins-registry/saveAndPreview';
-import './assets/main.scss';
+import '@/assets/main.scss';
 
 (async () => {
   const preference = new Map();

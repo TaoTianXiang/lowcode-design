@@ -1,8 +1,8 @@
 import { injectAssets } from '@alilc/lowcode-plugin-inject';
 import { ILowCodePluginContext } from '@alilc/lowcode-engine';
 import { getProjectSchemaToLocalStorage } from '@/editors/utils';
-import assets from '@/editors/assets/assets.json';
-import originSchema from '@/editors/assets/schema.json';
+import assets from '@/assets/assets.json';
+import originSchema from '@/assets/schema.json';
 
 const editorInit = (ctx: ILowCodePluginContext) => {
   return {
@@ -11,7 +11,6 @@ const editorInit = (ctx: ILowCodePluginContext) => {
       const { material, project } = ctx;
       const loadedAssets = await injectAssets(assets);
       material.setAssets(loadedAssets);
-      console.log(loadedAssets);
       const projectSchema = getProjectSchemaToLocalStorage();
       const schema = projectSchema ? projectSchema['componentsTree'].pop() : originSchema;
       project.onSimulatorRendererReady(() => {
