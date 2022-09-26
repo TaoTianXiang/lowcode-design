@@ -1,5 +1,5 @@
 import { ILowCodePluginContext } from '@alilc/lowcode-engine';
-import Logo from '@/editors/componets/logo/logo';
+import Logo from '@/componets/logo/logo';
 
 const topArea = (ctx: ILowCodePluginContext) => {
   return {
