@@ -10,7 +10,7 @@ import logoPane from '@/plugins-registry/logoPane/index';
 import ComponentPane from '@/plugins-registry/componentsPane';
 import pluginMap from '@/plugins-registry/pluginMap';
 import saveAndPreview from '@/plugins-registry/saveAndPreview';
-import '@/assets/main.scss';
+import '@/assets/css/main.scss';
 
 (async () => {
   const preference = new Map();
@@ -34,7 +34,7 @@ import '@/assets/main.scss';
   await plugins.register(pluginMap);
   await plugins.register(saveAndPreview);
 
-  setupHostEnvironment(project, '/static/js/vue.runtime.global.js');
+  setupHostEnvironment(project, './static/js/vue.runtime.global.js');
 
   await init(
     document.getElementById('lce-container')!,

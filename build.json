@@ -4,8 +4,7 @@
   },
   "vendor": false,
   "devServer": {
-    "hot": false,
-    "publicPath": "/test/"
+    "hot": false
   },
   "publicPath": "/",
   "externals": {
