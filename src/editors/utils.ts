@@ -13,12 +13,10 @@ export const setProjectSchemaToLocalStorage = () => {
     JSON.stringify(project.exportSchema(TransformStage.Save)),
   );
 };
-
 export const getProjectSchemaToLocalStorage = () => {
   const data = window.localStorage.getItem('projectSchema');
   return data && JSON.parse(data);
 };
-
 export const saveSchema = async () => {
   setProjectSchemaToLocalStorage();
   await setPackgesToLocalStorage();

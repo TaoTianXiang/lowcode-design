@@ -1,6 +1,6 @@
 {
   "entry": {
-    "preview": "./src/editors/preview.tsx"
+    "preview": "./src/preview/preview.tsx"
   },
   "vendor": false,
   "devServer": {
