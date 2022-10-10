@@ -1,11 +1,11 @@
 import { Asset } from '@alilc/lowcode-types';
-// import { NSpin } from 'vue-ui';
+import { NSpin } from 'naive-ui';
 import { buildComponents, AssetLoader } from '@knxcloud/lowcode-utils';
 import VueRenderer, { config } from '@knxcloud/lowcode-vue-renderer';
 import { defineComponent, onMounted, reactive, h, createApp, toRaw } from 'vue';
-// import { ConfigProvider, message } from './config-provider';
+import { ConfigProvider, message } from './config-provider';
 
-// config.setConfigProvider(ConfigProvider);
+config.setConfigProvider(ConfigProvider);
 
 const init = async () => {
   const packages = JSON.parse(window.localStorage.getItem('packages') || '[]');
@@ -42,9 +42,9 @@ const Preview = defineComponent(() => {
 
   return () => {
     const { schema, components } = data;
-    // if (!schema || !components) {
-    //   return h(NSpin);
-    // }
+    if (!schema || !components) {
+      return h(NSpin);
+    }
 
     return h('div', { class: 'lowcode-plugin-sample-preview' }, [
       h(VueRenderer, {
@@ -57,5 +57,5 @@ const Preview = defineComponent(() => {
 });
 
 const app = createApp(Preview);
-// app.config.globalProperties.$message = message;
+app.config.globalProperties.$message = message;
 app.mount('#lce-container');
