@@ -17,7 +17,7 @@ module.exports = ({ onGetWebpackConfig }) => {
       },
       entry: {
         editor: require.resolve('./src/editors/main.ts'),
-        simulator: require.resolve('./src/editors/simulator.ts'),
+        simulator: require.resolve('./src/preview/simulator.ts'),
       },
       // output: {
       //   path: join(__dirname, '/build/test'),
