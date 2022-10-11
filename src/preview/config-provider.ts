@@ -1,3 +1,4 @@
+/*修复国际化*/
 import { defineComponent, h } from 'vue';
 import {
   NConfigProvider,
