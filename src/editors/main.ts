@@ -5,11 +5,11 @@ import SchemaPlugin from '@alilc/lowcode-plugin-schema';
 import DataSource from '@alilc/lowcode-plugin-datasource-pane';
 import CodeEditor from '@alilc/lowcode-plugin-code-editor';
 import { setupHostEnvironment } from '@knxcloud/lowcode-utils';
-import InitPlugin from '@/editors/plugins-registry/init';
-import logoPane from '@/editors/plugins-registry/logoPane/index';
-import ComponentPane from '@/editors/plugins-registry/componentsPane';
-import pluginMap from '@/editors/plugins-registry/pluginMap';
-import saveAndPreview from '@/editors/plugins-registry/saveAndPreview';
+import InitPlugin from '@/plugins-registry/init';
+import logoPane from '@/plugins-registry/logoPane/index';
+import ComponentPane from '@/plugins-registry/componentsPane';
+import pluginMap from '@/plugins-registry/pluginMap';
+import saveAndPreview from '@/plugins-registry/saveAndPreview';
 import '@/assets/css/main.scss';
 
 (async () => {

@@ -23190,7 +23190,7 @@ PERFORMANCE OF THIS SOFTWARE.
       var $m,
         Ym = { create: Hm },
         Qm,
-        Zm = { paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.28.1/min/vs' } },
+        Zm = { paths: { vs: '../monaco-editor/min/vs' } },
         ty;
       function ey(t) {
         return function e() {
