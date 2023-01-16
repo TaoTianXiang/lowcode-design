@@ -1,0 +1,33 @@
+{
+    "proxy": [
+      [
+        "https://alifd.alicdn.com/npm/@alilc/lowcode-engine@(.*)",
+        "http://localhost:9527/static/js/nodeModels"
+      ],
+      [
+        "https://img.alicdn.com/tfs/",
+        "http://localhost:9527/static/tfs/"
+      ],
+      [
+        "http://at.alicdn.com/t/",
+        "http://localhost:9527/static/t/"
+      ],
+      [
+        "https://cdn.jsdelivr.net/npm/monaco-editor@0.28.1/",
+        "http://localhost:9527/static/js/monaco-editor/"
+      ],
+      [
+        "https://g.alicdn.com/code/lib/monaco-editor/0.31.1/",
+        "http://localhost:9527/static/js/monaco-editor/"
+      ],
+      [
+        "https://gw.alicdn.com/imgextra/(.*)/",
+        "http://localhost:9527/static/imgextra/"
+      ],
+      [
+        "http://g.alicdn.com/uxcore/pic/",
+        "http://localhost:9527/static/imgextra/"
+      ]
+    ]
+}
+  

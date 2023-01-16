@@ -1,7 +1,7 @@
 {
-  "name": "@alilc/lowcode-design",
+  "name": "@abc/lowcode-design",
   "version": "1.0.0",
-  "description": "基于阿里低代码搭建引擎",
+  "description": "基于阿里低代码引擎搭建",
   "repository": "-",
   "license": "MIT",
   "main": "index.js",
