@@ -12,7 +12,7 @@ import pluginMap from '@/plugins-registry/pluginMap';
 import saveAndPreview from '@/plugins-registry/saveAndPreview';
 import '@/assets/css/main.scss';
 
-(async () => {
+export default (async () => {
   const preference = new Map();
 
   preference.set('DataSourcePane', {
@@ -35,7 +35,6 @@ import '@/assets/css/main.scss';
   await plugins.register(saveAndPreview);
 
   setupHostEnvironment(project, './static/js/vue.runtime.global.js');
-
   await init(
     document.getElementById('lce-container')!,
     {

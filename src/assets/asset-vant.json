@@ -3,8 +3,8 @@
     {
       "package": "vant-ui",
       "version": "3.6.2",
-      "urls": ["https://fastly.jsdelivr.net/npm/vant@3/lib/vant.min.js"],
-      "library": "naive"
+      "urls": ["/static/js/ui/vant.js", "/static/css/vant.css"],
+      "library": "vant"
     }
   ],
   "components": [
@@ -12,6 +12,7 @@
       "title": "按钮",
       "category": "基础组件",
       "componentName": "vanButton",
+      "icon": "https://helios-allpublic-1257616148.cos.ap-shanghai.myqcloud.com/img/input.png",
       "npm": {
         "package": "vant-ui",
         "version": "3.6.2",
@@ -103,6 +104,5 @@
   ],
   "sort": {
     "categoryList": ["基础组件", "布局容器类"]
-  },
-  "ignoreComponents": {}
+  }
 }

@@ -23190,7 +23190,7 @@ PERFORMANCE OF THIS SOFTWARE.
       var $m,
         Ym = { create: Hm },
         Qm,
-        Zm = { paths: { vs: '../monaco-editor/min/vs' } },
+        Zm = { paths: { vs: 'https://g.alicdn.com/code/lib/monaco-editor/0.31.1/min/vs' } },
         ty;
       function ey(t) {
         return function e() {
@@ -23345,7 +23345,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }),
         Ty,
         Ry = { config: wy, init: Ey, __getMonacoInstance: Ay };
-      Ry.config({ paths: { vs: '../monaco-editor/min/vs' } });
+      Ry.config({ paths: { vs: 'https://g.alicdn.com/code/lib/monaco-editor/0.31.1/min/vs' } });
       var Ny,
         Ly =
           'en-US' ===
