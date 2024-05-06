@@ -1,7 +1,7 @@
-import { ILowCodePluginContext } from '@alilc/lowcode-engine';
+import { IPublicModelPluginContext } from '@alilc/lowcode-types';
 import Logo from '@/componets/logo/logo';
 
-const logoPane = (ctx: ILowCodePluginContext) => {
+const logoPane = (ctx: IPublicModelPluginContext) => {
   return {
     name: 'builtin-plugin-registry',
     async init() {

@@ -1,10 +1,10 @@
 import { injectAssets } from '@alilc/lowcode-plugin-inject';
-import { ILowCodePluginContext } from '@alilc/lowcode-engine';
+import { IPublicModelPluginContext } from '@alilc/lowcode-types';
 import { getProjectSchemaToLocalStorage } from '@/editors/utils';
 import assets from '@/assets/assets.json';
 import originSchema from '@/assets/schema.json';
 
-const editorInit = (ctx: ILowCodePluginContext) => {
+const editorInit = (ctx: IPublicModelPluginContext) => {
   return {
     name: 'editor-init',
     async init() {

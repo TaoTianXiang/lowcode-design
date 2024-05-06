@@ -1,7 +1,7 @@
-import { ILowCodePluginContext } from '@alilc/lowcode-engine';
+import { IPublicModelPluginContext } from '@alilc/lowcode-types';
 import ComponentsPane from '@alilc/lowcode-plugin-components-pane';
 
-const componentsPane = (ctx: ILowCodePluginContext) => {
+const componentsPane = (ctx: IPublicModelPluginContext) => {
   return {
     name: 'builtin-plugin-registry',
     async init() {
@@ -18,9 +18,9 @@ const componentsPane = (ctx: ILowCodePluginContext) => {
           description: '组件库',
         },
       });
-      componentsPane.disable();
+      componentsPane?.disable();
       project.onSimulatorRendererReady(() => {
-        componentsPane.enable();
+        componentsPane?.enable();
       });
     },
   };

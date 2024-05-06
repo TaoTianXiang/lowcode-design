@@ -18,14 +18,15 @@
   "dependencies": {
     "@alilc/lowcode-datasource-fetch-handler": "^1.0.1",
     "@alilc/lowcode-plugin-code-editor": "^1.0.3",
-    "@alilc/lowcode-setter-title": "^1.0.2",
+    "@alilc/lowcode-plugin-components-pane": "^1.0.3",
+    "@alilc/lowcode-plugin-datasource-pane": "^1.0.6",
     "@alilc/lowcode-plugin-inject": "^1.0.0",
     "@alilc/lowcode-plugin-manual": "^1.0.3",
-    "@alilc/lowcode-plugin-datasource-pane": "^1.0.6",
-    "@alilc/lowcode-plugin-components-pane": "^1.0.3",
-    "@alilc/lowcode-plugin-undo-redo": "^1.0.0",
     "@alilc/lowcode-plugin-schema": "^1.0.1",
+    "@alilc/lowcode-plugin-undo-redo": "^1.0.0",
     "@alilc/lowcode-react-renderer": "^1.0.0",
+    "@alilc/lowcode-setter-title": "^1.0.2",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "antd": "^4.21.4",
     "moment": "^2.29.3",
     "sass": "^1.54.5",
@@ -33,8 +34,11 @@
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.18",
+    "@alifd/next": "^1.27.11",
     "@alilc/lowcode-engine": "^1.0.13",
+    "@alilc/lowcode-engine-ext": "^1.0.6",
     "@alilc/lowcode-types": "^1.0.0",
+    "@knxcloud/lowcode-utils": "^1.4.7",
     "@knxcloud/lowcode-vue-renderer": "^1.4.7",
     "@knxcloud/lowcode-vue-simulator-renderer": "^1.4.7",
     "@types/react": "^16.8.3",
@@ -43,8 +47,11 @@
     "build-plugin-moment-locales": "^0.1.0",
     "build-plugin-react-app": "^1.1.2",
     "fs-extra": "^10.0.1",
+    "naive-ui": "^2.32.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "vue": "^3.2.37",
-    "naive-ui": "^2.32.1"
+    "vue": "^3.2.37"
+  },
+  "resolutions": {
+    "@babel/core": "7.20.12"
   }
 }

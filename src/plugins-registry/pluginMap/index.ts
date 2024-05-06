@@ -1,8 +1,9 @@
-import { isJSExpression } from '@alilc/lowcode-types';
+import { isJSExpression, IPublicModelPluginContext } from '@alilc/lowcode-types';
+// @ts-ignore
 import AliLowCodeEngineExt from '@alilc/lowcode-engine-ext';
-import { ILowCodePluginContext, project } from '@alilc/lowcode-engine';
+import { project } from '@alilc/lowcode-engine';
 
-const setterRegistry = (ctx: ILowCodePluginContext) => {
+const setterRegistry = (ctx: IPublicModelPluginContext) => {
   const { setterMap, pluginMap } = AliLowCodeEngineExt;
   return {
     name: 'ext-setters-registry',
