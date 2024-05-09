@@ -29,13 +29,14 @@
     "@vue/cli-plugin-babel": "^5.0.8",
     "antd": "^4.21.4",
     "moment": "^2.29.3",
+    "regenerator-runtime": "^0.14.1",
     "sass": "^1.54.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@alib/build-scripts": "^0.1.18",
     "@alifd/next": "^1.27.11",
-    "@alilc/lowcode-engine": "^1.0.13",
+    "@alilc/lowcode-engine": "^1.1.2",
     "@alilc/lowcode-engine-ext": "^1.0.6",
     "@alilc/lowcode-types": "^1.0.0",
     "@knxcloud/lowcode-utils": "^1.4.7",

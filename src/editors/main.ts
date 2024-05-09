@@ -24,15 +24,15 @@ export default (async () => {
     ],
   });
   await plugins.register(Inject);
+  await plugins.register(InitPlugin);
   await plugins.register(UndoRedoPlugin);
   await plugins.register(SchemaPlugin);
   await plugins.register(DataSource); //数据源
   await plugins.register(ComponentPane);
-  await plugins.register(InitPlugin);
   await plugins.register(CodeEditor);
   await plugins.register(logoPane);
-  await plugins.register(pluginMap);
   await plugins.register(saveAndPreview);
+  await plugins.register(pluginMap);
 
   setupHostEnvironment(project, './static/js/vue.runtime.global.js');
   await init(
